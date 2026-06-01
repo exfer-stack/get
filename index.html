@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Exfer — Downloads</title>
+  <meta name="description" content="Download Exfer wallets, run a node or indexer, and grab the developer tools — all in one place." />
+  <link rel="icon" type="image/png" href="assets/exfer-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">
+      <img src="assets/exfer-mark.png" alt="" class="brand-mark" />
+      <span class="brand-name">Exfer</span>
+    </a>
+    <div class="lang" id="lang-switch" role="group" aria-label="Language">
+      <button data-lang="en">EN</button>
+      <button data-lang="zh-CN">中文</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow" data-i18n="hero.eyebrow">EXFER</p>
+      <h1 data-i18n="hero.title">Get Exfer.</h1>
+      <p class="lede" data-i18n="hero.sub">Wallets, a node, an indexer, and the developer tools — every official build, in one place.</p>
+    </section>
+
+    <!-- Wallets -->
+    <section class="block">
+      <h2 data-i18n="sec.wallets">Wallets</h2>
+      <p class="block-sub" data-i18n="sec.walletsSub">Hold and move EXFER. Set a password and you're in — no account, no server to run.</p>
+      <div class="cards">
+        <article class="card" id="card-desktop">
+          <div class="card-head">
+            <span class="card-ico" aria-hidden="true">🖥️</span>
+            <div>
+              <h3 data-i18n="card.desktop.name">Desktop Wallet</h3>
+              <p class="card-desc" data-i18n="card.desktop.desc">macOS, Windows &amp; Linux. One double-click to a running wallet.</p>
+            </div>
+            <span class="ver" data-ver="desktop"></span>
+          </div>
+          <div class="card-actions" id="desktop-actions"></div>
+        </article>
+
+        <article class="card" id="card-mobile">
+          <div class="card-head">
+            <span class="card-ico" aria-hidden="true">📱</span>
+            <div>
+              <h3 data-i18n="card.mobile.name">Mobile Wallet</h3>
+              <p class="card-desc" data-i18n="card.mobile.desc">iOS &amp; Android, one app. Your keys never leave the phone.</p>
+            </div>
+            <span class="ver" data-ver="mobile"></span>
+          </div>
+          <div class="card-actions" id="mobile-actions"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Run a node / services -->
+    <section class="block">
+      <h2 data-i18n="sec.node">Run a node &amp; services</h2>
+      <p class="block-sub" data-i18n="sec.nodeSub">Self-host the chain. Build from source; each repo has setup docs.</p>
+      <div class="cards">
+        <article class="card" id="card-node">
+          <div class="card-head">
+            <span class="card-ico" aria-hidden="true">🛰️</span>
+            <div>
+              <h3 data-i18n="card.node.name">Exfer Node</h3>
+              <p class="card-desc" data-i18n="card.node.desc">The full node — P2P, JSON-RPC, mempool &amp; SSE push.</p>
+            </div>
+            <span class="ver" data-ver="node"></span>
+          </div>
+          <div class="card-actions" id="node-actions"></div>
+        </article>
+
+        <article class="card" id="card-indexer">
+          <div class="card-head">
+            <span class="card-ico" aria-hidden="true">🔎</span>
+            <div>
+              <h3 data-i18n="card.indexer.name">Indexer</h3>
+              <p class="card-desc" data-i18n="card.indexer.desc">Read-only chain index — per-address history that powers Activity.</p>
+            </div>
+            <span class="ver" data-ver="indexer"></span>
+          </div>
+          <div class="card-actions" id="indexer-actions"></div>
+        </article>
+
+        <article class="card" id="card-walletd">
+          <div class="card-head">
+            <span class="card-ico" aria-hidden="true">⚙️</span>
+            <div>
+              <h3 data-i18n="card.walletd.name">walletd</h3>
+              <p class="card-desc" data-i18n="card.walletd.desc">The wallet daemon both apps embed — keys, signing, broadcast.</p>
+            </div>
+            <span class="ver" data-ver="walletd"></span>
+          </div>
+          <div class="card-actions" id="walletd-actions"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Developer tools -->
+    <section class="block">
+      <h2 data-i18n="sec.dev">Developer tools</h2>
+      <p class="block-sub" data-i18n="sec.devSub">Build on Exfer.</p>
+      <div class="cards">
+        <article class="card" id="card-py">
+          <div class="card-head">
+            <span class="card-ico" aria-hidden="true">🐍</span>
+            <div>
+              <h3 data-i18n="card.py.name">Python client</h3>
+              <p class="card-desc" data-i18n="card.py.desc">Typed client for the walletd JSON-RPC API.</p>
+            </div>
+            <span class="ver" data-ver="py"></span>
+          </div>
+          <div class="card-actions" id="py-actions"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="foot-line">
+      <span data-i18n="footer.builtwith">Open releases on</span>
+      <a href="https://github.com/exfer-stack" target="_blank" rel="noopener">GitHub</a>.
+      <span class="updated" id="updated-stamp"></span>
+    </p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

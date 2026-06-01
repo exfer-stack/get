@@ -1,0 +1,42 @@
+{
+  "hero.eyebrow": "EXFER",
+  "hero.title": "下载 Exfer。",
+  "hero.sub": "钱包、节点、索引器,以及开发者工具——所有官方构建,集中一处。",
+
+  "sec.wallets": "钱包",
+  "sec.walletsSub": "持有与转移 EXFER。设个密码即可开始——无需注册账号,也不用自建服务器。",
+  "card.desktop.name": "桌面钱包",
+  "card.desktop.desc": "macOS、Windows、Linux。双击即用。",
+  "card.mobile.name": "移动钱包",
+  "card.mobile.desc": "iOS 与 Android,同一个 App。私钥永不离开手机。",
+
+  "sec.node": "运行节点与服务",
+  "sec.nodeSub": "自托管整条链。从源码构建,各仓库都附有部署文档。",
+  "card.node.name": "Exfer 节点",
+  "card.node.desc": "完整节点——P2P、JSON-RPC、内存池与 SSE 推送。",
+  "card.indexer.name": "索引器",
+  "card.indexer.desc": "只读链索引——按地址的历史,驱动「动态」页。",
+  "card.walletd.name": "walletd",
+  "card.walletd.desc": "两端 App 内嵌的钱包守护进程——密钥、签名、广播。",
+
+  "sec.dev": "开发者工具",
+  "sec.devSub": "在 Exfer 上构建。",
+  "card.py.name": "Python 客户端",
+  "card.py.desc": "walletd JSON-RPC 接口的带类型客户端。",
+
+  "btn.downloadFor": "下载",
+  "os.macos": "macOS",
+  "os.windows": "Windows",
+  "os.linux": "Linux",
+  "dl.linuxDeb": "Linux(.deb)",
+  "dl.linuxAppimage": "Linux(AppImage)",
+  "dl.linuxRpm": "Linux(.rpm)",
+  "btn.androidApk": "下载 APK(安卓)",
+  "label.soon": "即将上架",
+  "mobile.allReleases": "全部构建与版本",
+  "btn.viewGithub": "在 GitHub 查看",
+  "btn.guide": "部署指南",
+
+  "footer.builtwith": "全部 release 在",
+  "footer.updated": "更新于"
+}

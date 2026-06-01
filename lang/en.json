@@ -1,0 +1,42 @@
+{
+  "hero.eyebrow": "EXFER",
+  "hero.title": "Get Exfer.",
+  "hero.sub": "Wallets, a node, an indexer, and the developer tools — every official build, in one place.",
+
+  "sec.wallets": "Wallets",
+  "sec.walletsSub": "Hold and move EXFER. Set a password and you're in — no account, no server to run.",
+  "card.desktop.name": "Desktop Wallet",
+  "card.desktop.desc": "macOS, Windows & Linux. One double-click to a running wallet.",
+  "card.mobile.name": "Mobile Wallet",
+  "card.mobile.desc": "iOS & Android, one app. Your keys never leave the phone.",
+
+  "sec.node": "Run a node & services",
+  "sec.nodeSub": "Self-host the chain. Build from source; each repo has setup docs.",
+  "card.node.name": "Exfer Node",
+  "card.node.desc": "The full node — P2P, JSON-RPC, mempool & SSE push.",
+  "card.indexer.name": "Indexer",
+  "card.indexer.desc": "Read-only chain index — per-address history that powers Activity.",
+  "card.walletd.name": "walletd",
+  "card.walletd.desc": "The wallet daemon both apps embed — keys, signing, broadcast.",
+
+  "sec.dev": "Developer tools",
+  "sec.devSub": "Build on Exfer.",
+  "card.py.name": "Python client",
+  "card.py.desc": "Typed client for the walletd JSON-RPC API.",
+
+  "btn.downloadFor": "Download for",
+  "os.macos": "macOS",
+  "os.windows": "Windows",
+  "os.linux": "Linux",
+  "dl.linuxDeb": "Linux (.deb)",
+  "dl.linuxAppimage": "Linux (AppImage)",
+  "dl.linuxRpm": "Linux (.rpm)",
+  "btn.androidApk": "Download APK (Android)",
+  "label.soon": "Soon",
+  "mobile.allReleases": "All builds & versions",
+  "btn.viewGithub": "View on GitHub",
+  "btn.guide": "Setup guide",
+
+  "footer.builtwith": "Open releases on",
+  "footer.updated": "Updated"
+}

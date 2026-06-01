@@ -1,0 +1,45 @@
+name: Refresh releases
+
+# Keeps releases.json (the data the download page reads) in sync with each
+# component repo's latest release.
+#   - daily cron as a backstop
+#   - manual run from the Actions tab
+#   - repository_dispatch: a component's release workflow can POST a
+#     { "event_type": "refresh-releases" } dispatch to update the page instantly
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [refresh-releases]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-releases
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Regenerate releases.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/refresh-releases.mjs
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- releases.json; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add releases.json
+          git commit -m "chore: refresh releases.json"
+          git push
