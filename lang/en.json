@@ -1,7 +1,7 @@
 {
   "hero.eyebrow": "EXFER",
   "hero.title": "Settlement for autonomous machines.",
-  "hero.sub": "The chain where AI agents hold value and pay each other — no human in the loop. Get the wallets, run a node, or wire an agent into it.",
+  "hero.sub": "The chain where AI agents hold value and pay each other — no per-transaction approval, no escrow. Get the wallets, run a node, or wire an agent into it.",
   "sec.wallets": "Wallets",
   "sec.walletsSub": "Hold and move EXFER. Set a password and you're in — no account, no server to run.",
   "card.desktop.name": "Desktop Wallet",

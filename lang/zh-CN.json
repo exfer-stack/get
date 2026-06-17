@@ -1,7 +1,7 @@
 {
   "hero.eyebrow": "EXFER",
   "hero.title": "为自治机器结算。",
-  "hero.sub": "一条让 AI agent 持有价值、互相付款的链——全程无需人工。下载钱包、运行节点,或把 agent 接进来。",
+  "hero.sub": "一条让 AI agent 持有价值、互相付款的链——没有逐笔人工批准,没有担保中间人。下载钱包、运行节点,或把 agent 接进来。",
   "sec.wallets": "钱包",
   "sec.walletsSub": "持有与转移 EXFER。设个密码即可开始——无需注册账号,也不用自建服务器。",
   "card.desktop.name": "桌面钱包",
