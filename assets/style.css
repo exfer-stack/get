@@ -68,6 +68,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 22px 40px; }
   font-weight: 700; margin: 0 0 16px;
 }
 .lede { font-size: clamp(16px, 2.4vw, 19px); color: var(--text-dim); max-width: 36ch; margin: 0; }
+.hero-proof { font-size: 13px; color: var(--text-faint); max-width: 44ch; margin: 14px 0 0; line-height: 1.5; }
 
 /* ── blocks ────────────────────────────────────────────── */
 .block { padding: 26px 0; border-top: 1px solid var(--border-soft); }
